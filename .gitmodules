@@ -1,0 +1,6 @@
+[submodule "client"]
+	path = client
+	url = https://github.com/ysdhuri312/lms-client.git
+[submodule "server"]
+	path = server
+	url = https://github.com/ysdhuri312/lms-server.git
