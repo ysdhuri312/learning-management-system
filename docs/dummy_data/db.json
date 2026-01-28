@@ -1,5 +1,5 @@
 {
-  "users": [
+  "oldUsersData": [
     {
       "id": 1,
       "firstName": "John",
@@ -26,7 +26,7 @@
     }
   ],
 
-  "courses": [
+  "oldCoursesData": [
     {
       "id": 101,
       "title": "React - The Complete Guide (incl. Next.js, Redux)",
@@ -92,620 +92,102 @@
           ]
         }
       ]
+    }
+  ],
+
+  "newUsersData": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "role": "student",
+      "enrolledCourses": [101, 102]
     },
     {
-      "id": 102,
-      "title": "Node.js Masterclass",
+      "id": 1,
+      "firstName": "Ron",
+      "lastName": "Wisley",
+      "email": "ron.w@example.com",
+      "role": "student",
+      "enrolledCourses": [101, 102]
+    },
+    {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@example.com",
+      "role": "instructor",
+      "managedCourses": [101]
+    }
+  ],
+
+  "newCoursesData": [
+    {
+      "id": 101,
+      "title": "React - The Complete Guide (incl. Next.js, Redux)",
       "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 3,
-      "description": "Learn backend development with Node.js, Express, MongoDB and REST APIs.",
+      "instructorId": 2,
+      "description": "Dive in and learn React.js from scratch! Learn React, Hooks, Redux, React Router, Next.js, Best Practices and way more!",
       "category": "Development",
-      "price": 39.99,
-      "courseTime": "35 hours, 20 minutes",
-      "ratings": 5,
-      "enrolledStudents": 45,
-      "ratedStudents": 20,
-      "moduleCount": 5,
+      "price": 49.99,
+      "offPercentage": 20,
+      "courseTime": "49hr 30min",
+      "ratings": 4,
+      "enrolledStudents": 12,
+      "ratedStudents": 5,
+      "moduleCount": 2,
+      "createdAt": "2022-10-30T09:20:06.131Z",
+      "updatedAt": "2022-10-30T09:37:34.015Z",
+      "content": "mdFilePat(What you'll learn / Requirements / Prerequisites / Detailed description )",
       "modules": [
         {
           "moduleId": "m1",
-          "title": "Introduction to Node.js",
-          "moduleTime": "6 hours",
+          "title": "Getting Started",
+          "moduleTime": "49hr 30min",
           "lessonsCount": 3,
           "lessons": [
             {
               "lessonId": "l1",
-              "title": "What is Node.js?",
-              "lessonTime": "12 minutes",
+              "title": "Welcome To The Course!",
+              "lessonTime": "10:00",
               "preview": true
             },
             {
               "lessonId": "l2",
-              "title": "Installing Node",
-              "lessonTime": "10 minutes",
+              "title": "ReactJS vs 'Vanilla JavaScript': Why Use React?",
+              "lessonTime": "15:35",
               "preview": false
             },
             {
               "lessonId": "l3",
-              "title": "First Node App",
-              "lessonTime": "15 minutes",
+              "title": "Editing Our First React App",
+              "lessonTime": "7:55",
               "preview": false
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": 103,
-      "title": "Full Stack Web Development (MERN)",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 1,
-      "description": "Build full stack apps using MongoDB, Express, React, and Node.",
-      "category": "Development",
-      "price": 59.99,
-      "courseTime": "60 hours",
-      "ratings": 5,
-      "enrolledStudents": 120,
-      "ratedStudents": 60,
-      "moduleCount": 7,
-      "modules": [
+        },
         {
-          "moduleId": "m1",
-          "title": "MERN Overview",
-          "moduleTime": "5 hours",
-          "lessonsCount": 2,
+          "moduleId": "m2",
+          "title": "React Essentials - Components, JSX, Props, State & More",
           "lessons": [
             {
               "lessonId": "l1",
-              "title": "What is MERN?",
-              "lessonTime": "8 minutes",
+              "title": "Module Introduction",
+              "lessonTime": "3:12",
               "preview": true
             },
             {
               "lessonId": "l2",
-              "title": "Project Setup",
-              "lessonTime": "20 minutes",
+              "title": "JSX & React Components [Core Concept]",
+              "lessonTime": "12:00",
               "preview": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 104,
-      "title": "UI/UX Design Fundamentals",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 4,
-      "description": "Learn UI/UX design, Figma, wireframes and prototypes.",
-      "category": "Design",
-      "price": 29.99,
-      "courseTime": "25 hours",
-      "ratings": 4,
-      "enrolledStudents": 80,
-      "ratedStudents": 35,
-      "moduleCount": 4,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Design Basics",
-          "moduleTime": "4 hours",
-          "lessonsCount": 2,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "What is UI/UX?",
-              "lessonTime": "10 minutes",
-              "preview": true
             },
             {
-              "lessonId": "l2",
-              "title": "Design Thinking",
-              "lessonTime": "15 minutes",
+              "lessonId": "l3",
+              "title": "Using & Outputting Dynamic Values [Core Concept]",
+              "lessonTime": "9:19",
               "preview": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 105,
-      "title": "Python for Data Science",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 5,
-      "description": "Learn Python, NumPy, Pandas, Matplotlib and Machine Learning basics.",
-      "category": "Data Science",
-      "price": 54.99,
-      "courseTime": "48 hours",
-      "ratings": 5,
-      "enrolledStudents": 150,
-      "ratedStudents": 90,
-      "moduleCount": 6,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Python Basics",
-          "moduleTime": "6 hours",
-          "lessonsCount": 2,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "Python Introduction",
-              "lessonTime": "12 minutes",
-              "preview": true
-            },
-            {
-              "lessonId": "l2",
-              "title": "Variables & Data Types",
-              "lessonTime": "18 minutes",
-              "preview": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 106,
-      "title": "AWS Cloud Practitioner",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 6,
-      "description": "Learn AWS cloud basics, EC2, S3, IAM, and deployment.",
-      "category": "Cloud",
-      "price": 44.99,
-      "courseTime": "30 hours",
-      "ratings": 4,
-      "enrolledStudents": 60,
-      "ratedStudents": 22,
-      "moduleCount": 5,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Cloud Concepts",
-          "moduleTime": "3 hours",
-          "lessonsCount": 2,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "What is Cloud?",
-              "lessonTime": "9 minutes",
-              "preview": true
-            },
-            {
-              "lessonId": "l2",
-              "title": "AWS Overview",
-              "lessonTime": "14 minutes",
-              "preview": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 107,
-      "title": "Digital Marketing Bootcamp",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 7,
-      "description": "Master SEO, social media marketing, Google Ads, and branding.",
-      "category": "Marketing",
-      "price": 34.99,
-      "courseTime": "28 hours",
-      "ratings": 4,
-      "enrolledStudents": 95,
-      "ratedStudents": 40,
-      "moduleCount": 4,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Marketing Basics",
-          "moduleTime": "5 hours",
-          "lessonsCount": 2,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "Intro to Marketing",
-              "lessonTime": "11 minutes",
-              "preview": true
-            },
-            {
-              "lessonId": "l2",
-              "title": "Digital Channels",
-              "lessonTime": "16 minutes",
-              "preview": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 108,
-      "title": "Ultimate Python Bootcamp: From Zero to Hero",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 5,
-      "description": "Master Python by building 100 projects in 100 days. Includes Data Science, Automation, and Web Dev.",
-      "category": "Development",
-      "price": 54.99,
-      "courseTime": "62 hours, 15 minutes",
-      "ratings": 5,
-      "enrolledStudents": 450,
-      "ratedStudents": 112,
-      "moduleCount": 10,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Python Fundamentals",
-          "moduleTime": "5 hours",
-          "lessonsCount": 5,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "Installing Python & IDEs",
-              "lessonTime": "12 minutes",
-              "preview": true
-            },
-            {
-              "lessonId": "l2",
-              "title": "Variables and Data Types",
-              "lessonTime": "25 minutes",
-              "preview": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 109,
-      "title": "Graphic Design Masterclass",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 12,
-      "description": "Learn Photoshop, Illustrator, and InDesign. Design logos, branding, and social media graphics.",
-      "category": "Design",
-      "price": 39.99,
-      "courseTime": "28 hours, 45 minutes",
-      "ratings": 4,
-      "enrolledStudents": 89,
-      "ratedStudents": 20,
-      "moduleCount": 8,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Color Theory & Typography",
-          "moduleTime": "3 hours",
-          "lessonsCount": 4,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "The Psychology of Color",
-              "lessonTime": "20 minutes",
-              "preview": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 110,
-      "title": "Digital Marketing Strategy 2026",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 8,
-      "description": "Master SEO, Facebook Ads, Google Analytics, and Content Marketing to grow any business.",
-      "category": "Business",
-      "price": 29.99,
-      "courseTime": "18 hours, 10 minutes",
-      "ratings": 4,
-      "enrolledStudents": 312,
-      "ratedStudents": 45,
-      "moduleCount": 12,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Market Research Fundamentals",
-          "moduleTime": "2 hours",
-          "lessonsCount": 3,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "Identifying Your Persona",
-              "lessonTime": "15 minutes",
-              "preview": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 111,
-      "title": "Machine Learning A-Z: Hands-On Python",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 21,
-      "description": "Learn to create Machine Learning Algorithms in Python from two Data Science experts.",
-      "category": "Data Science",
-      "price": 89.99,
-      "courseTime": "44 hours, 20 minutes",
-      "ratings": 5,
-      "enrolledStudents": 210,
-      "ratedStudents": 88,
-      "moduleCount": 15,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Data Preprocessing",
-          "moduleTime": "4 hours",
-          "lessonsCount": 6,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "Handling Missing Data",
-              "lessonTime": "18 minutes",
-              "preview": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 112,
-      "title": "The Art of Public Speaking",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 33,
-      "description": "Win any audience with confidence. Learn storytelling, body language, and speech writing.",
-      "category": "Personal Development",
-      "price": 19.99,
-      "courseTime": "8 hours, 50 minutes",
-      "ratings": 5,
-      "enrolledStudents": 156,
-      "ratedStudents": 42,
-      "moduleCount": 4,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Overcoming Stage Fright",
-          "moduleTime": "1 hour, 30 minutes",
-          "lessonsCount": 2,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "Breathing Techniques",
-              "lessonTime": "10 minutes",
-              "preview": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 113,
-      "title": "Cybersecurity Awareness Training",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 14,
-      "description": "Protect yourself and your company from hackers, phishing, and malware attacks.",
-      "category": "IT & Software",
-      "price": 0.0,
-      "courseTime": "4 hours, 15 minutes",
-      "ratings": 4,
-      "enrolledStudents": 1200,
-      "ratedStudents": 500,
-      "moduleCount": 5,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Social Engineering",
-          "moduleTime": "45 minutes",
-          "lessonsCount": 3,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "Spotting Phishing Emails",
-              "lessonTime": "15 minutes",
-              "preview": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 114,
-      "title": "Photography Masterclass: A Complete Guide",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 9,
-      "description": "The best-selling photography course. Learn how to take amazing photos with any camera.",
-      "category": "Photography",
-      "price": 44.99,
-      "courseTime": "22 hours",
-      "ratings": 5,
-      "enrolledStudents": 95,
-      "ratedStudents": 18,
-      "moduleCount": 11,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Camera Basics",
-          "moduleTime": "2 hours",
-          "lessonsCount": 5,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "Aperture & Shutter Speed",
-              "lessonTime": "25 minutes",
-              "preview": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 115,
-      "title": "Financial Literacy 101",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 40,
-      "description": "Take control of your money. Learn budgeting, investing, taxes, and retirement planning.",
-      "category": "Finance",
-      "price": 24.99,
-      "courseTime": "12 hours, 40 minutes",
-      "ratings": 4,
-      "enrolledStudents": 420,
-      "ratedStudents": 90,
-      "moduleCount": 7,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Compound Interest",
-          "moduleTime": "1 hour",
-          "lessonsCount": 2,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "The Rule of 72",
-              "lessonTime": "12 minutes",
-              "preview": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 116,
-      "title": "Chef's Table: Italian Cooking Secrets",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 52,
-      "description": "Master the art of handmade pasta, sauces, and authentic Italian desserts at home.",
-      "category": "Lifestyle",
-      "price": 34.99,
-      "courseTime": "15 hours, 20 minutes",
-      "ratings": 5,
-      "enrolledStudents": 64,
-      "ratedStudents": 12,
-      "moduleCount": 9,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Pasta From Scratch",
-          "moduleTime": "3 hours",
-          "lessonsCount": 4,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "The Perfect Dough",
-              "lessonTime": "45 minutes",
-              "preview": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 117,
-      "title": "UX/UI Design: Build High-Fidelity Prototypes",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 18,
-      "description": "Learn Figma and Adobe XD. Design user-centric apps and websites with interactive prototypes.",
-      "category": "Design",
-      "price": 59.99,
-      "courseTime": "36 hours",
-      "ratings": 5,
-      "enrolledStudents": 280,
-      "ratedStudents": 55,
-      "moduleCount": 14,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Wireframing",
-          "moduleTime": "4 hours",
-          "lessonsCount": 5,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "Low-Fi vs Hi-Fi",
-              "lessonTime": "22 minutes",
-              "preview": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 118,
-      "title": "Yoga for Beginners: 30 Day Challenge",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 7,
-      "description": "Start your yoga journey today. Improve flexibility, strength, and mental clarity.",
-      "category": "Health & Fitness",
-      "price": 14.99,
-      "courseTime": "30 hours",
-      "ratings": 5,
-      "enrolledStudents": 850,
-      "ratedStudents": 230,
-      "moduleCount": 30,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Day 1: Finding Your Flow",
-          "moduleTime": "1 hour",
-          "lessonsCount": 1,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "Sun Salutations",
-              "lessonTime": "60 minutes",
-              "preview": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 119,
-      "title": "Music Theory for Electronic Producers",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 25,
-      "description": "Learn chords, scales, and melodies specifically for Ableton, FL Studio, and Logic Pro.",
-      "category": "Music",
-      "price": 49.99,
-      "courseTime": "14 hours, 15 minutes",
-      "ratings": 4,
-      "enrolledStudents": 112,
-      "ratedStudents": 30,
-      "moduleCount": 6,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "The Major Scale",
-          "moduleTime": "2 hours",
-          "lessonsCount": 3,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "Circle of Fifths",
-              "lessonTime": "30 minutes",
-              "preview": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 120,
-      "title": "Sales Mastery: Closing the Deal",
-      "thumbnail": "https://picsum.photos/800/600",
-      "instructorId": 61,
-      "description": "Advanced negotiation techniques and psychological triggers to increase your conversion rate.",
-      "category": "Business",
-      "price": 69.99,
-      "courseTime": "10 hours",
-      "ratings": 4,
-      "enrolledStudents": 45,
-      "ratedStudents": 8,
-      "moduleCount": 5,
-      "modules": [
-        {
-          "moduleId": "m1",
-          "title": "Objection Handling",
-          "moduleTime": "2 hours",
-          "lessonsCount": 4,
-          "lessons": [
-            {
-              "lessonId": "l1",
-              "title": "The 'Feel-Felt-Found' Method",
-              "lessonTime": "18 minutes",
-              "preview": true
             }
           ]
         }
